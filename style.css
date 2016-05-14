@@ -1,0 +1,362 @@
+html {
+	overflow: hidden;
+}
+
+#wrapper {
+	display: none;
+}
+
+
+h1 {
+  position: absolute;
+  z-index: 2;
+  font-family: PierBold;
+  color: #EE3524;
+  letter-spacing: 1px;
+  bottom: 0px;
+  padding: 20px;
+  left: 30px;
+}
+
+h2 {
+  font-family: PierRegular;
+  color: #1F3346;
+  letter-spacing: 1px;
+  bottom: 0px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 200px;
+  margin: auto;
+}
+
+
+/* Horizontal Navigation */ 
+#logo {
+  width: 344px;
+  height: 59px;
+  background-image: url(logotypewhite.png);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#logo:hover {
+  background-image: url(logotype.png);
+  opacity: .6;
+}
+
+
+#horizontalLinks {
+  height: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1F3346;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#horizontalLinks li a {
+  float: right;
+  font-family: PierRegular;
+  color: #ADBACB;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-top: 28px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#loopsLink {
+  margin-right: 40px;
+}
+
+#loopsLink:hover, #loopsLink:active {
+  height: 70px;
+  background-color: white;
+	color: #1F3346;
+  opacity: .7;
+}
+
+#bendsLink:hover, #bendsLink:active {
+  height: 70px;
+  background-color: white;
+	color: #EE3524;
+  opacity: .7;
+}
+
+#hitchesLink:hover, #hitchesLink:active {
+  height: 70px;
+  background-color: white;
+	color: #5CE1FF;
+  opacity: .7;
+}
+
+#stoppersLink:hover, #stoppersLink:active {
+  height: 70px;
+  background-color: white;
+	color: #5DECD3;
+  opacity: .7;
+}
+
+.dropdownLoops {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdownLoops a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownLoops a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdownLoops {
+    display: inherit;
+}
+
+
+
+/* Home background */
+#coverimg {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#coverimg img {
+	position: absolute;
+	z-index: -1;
+	top: -80px;
+	left: -8px;
+	mix-blend-mode: multiply;
+	opacity: .5;
+}
+
+
+/* Loop Content */
+.background {
+  opacity: .3;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  top: 0;
+  top: -80px;
+}
+
+
+.loopsWrapper {
+  margin: auto;
+  width: 1000px;
+  margin-top: 170px;
+}
+
+#one, #two, #three, #four {
+  height: 300px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  float: left;
+  background-size: 250px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#one {
+  background-image: url(butterflyone.png);
+}
+
+#one:hover {
+  background-image: url(butterflytwo.png);
+  opacity: .7;
+}
+
+#two {
+  background-image: url(bowlineone.png);
+}
+
+#two:hover {
+  background-image: url(bowlinetwo.png);
+  opacity: .7;
+}
+
+#three {
+  background-image: url(spliceone.png);
+}
+
+
+#three:hover {
+  background-image: url(splicetwo.png);
+  opacity: .7;
+}
+
+#four {
+  background-image: url(shackleone.png);
+}
+
+#four:hover {
+  background-image: url(shackletwo.png);
+  opacity: .7;
+}
+
+.bendsWrapper {
+  margin: auto;
+  width: 750px;
+  margin-top: 170px;
+}
+
+.bendsWrapper #one {
+  background-image: url(alpineone.png);
+}
+
+.bendsWrapper #one:hover {
+  background-image: url(alpinetwo.png);
+  opacity: .7;
+}
+
+.bendsWrapper #two {
+  background-image: url(carrickone.png);
+}
+
+.bendsWrapper #two:hover {
+  background-image: url(carricktwo.png);
+  opacity: .7;
+}
+
+.bendsWrapper #three {
+  background-image: url(zeppelinone.png);
+}
+
+.bendsWrapper #three:hover {
+  background-image: url(zeppelintwo.png);
+  opacity: .7;
+}
+
+.stoppersWrapper {
+  margin: auto;
+  width: 750px;
+  margin-top: 170px;
+}
+
+.stoppersWrapper #one {
+  background-image: url(eightone.png);
+}
+
+.stoppersWrapper #one:hover {
+  background-image: url(eighttwo.png);
+  opacity: .7;
+}
+
+.stoppersWrapper #two {
+  background-image: url(ashleyone.png);
+}
+
+.stoppersWrapper #two:hover {
+  background-image: url(ashleytwo.png);
+  opacity: .7;
+}
+
+.stoppersWrapper #three {
+  background-image: url(estarone.png);
+}
+
+.stoppersWrapper #three:hover {
+  background-image: url(estartwo.png);
+  opacity: .7;
+}
+
+
+/*subpage layout*/
+.numbers {
+  width: 380px;
+  margin: auto;
+}
+
+#stepOne, #stepTwo, #stepThree, #stepFour {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 120px;
+  width: 50px;
+  height: 50px;
+  background-color: #1F3346;
+  margin-left: 30px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+h3 {
+  color: white;
+  font-family: PierBold;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+#stepOne:hover, #stepTwo:hover, #stepThree:hover, #stepFour:hover {
+  background-color: #EE3524;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.howtoImages {
+  position: relative;
+  top: 100px;
+  width: 500px;
+  margin: auto;
+}
+
+.definition {
+  margin: auto;
+  width: 300px;
+  position: relative;
+  top: 30px;
+}
+
+.definition h2 {
+  font-family: PierBold;
+  left: -77px;
+  top: -20px;
+}
+
+.definition p {
+  font-family: PierRegular;
+  font-size: 12px;
+  color: #777a82;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: PierBold;
+    src: url(pier-bold.otf);
+}
+
+@font-face {
+    font-family: PierRegular;
+    src: url(pier-regular.otf);
+}
